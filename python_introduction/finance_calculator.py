@@ -7,8 +7,8 @@
 # Display the user's monthly savings
 # Display the projected annual savings after including the interest
 
-monthly_salary = int(input("Enter your monthly income: "))
-monthly_expenses = int(input("Enter your total mothly expenses: "))
+monthly_salary = float(input("Enter your monthly income: "))
+monthly_expenses = float(input("Enter your total mothly expenses: "))
 
 monthly_savings = monthly_salary - monthly_expenses
 
