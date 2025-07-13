@@ -8,7 +8,7 @@
 # Display the projected annual savings after including the interest
 
 monthly_salary = float(input("Enter your monthly income: "))
-monthly_expenses = float(input("Enter your total mothly expenses: "))
+monthly_expenses = float(input("Enter your total monthly expenses: ")) # Corrected typo: "mothly" to "monthly"
 
 monthly_savings = monthly_salary - monthly_expenses
 
@@ -16,5 +16,6 @@ annual_interest_rate = 0.05
 
 project_annual_savings = monthly_savings * 12 + (monthly_savings * 12 * annual_interest_rate)
 
-print("Your monthly savings are ", monthly_savings)
-print("Projected savings after one year, with interest, is", project_annual_savings)
+# Corrected print statements to match the example interaction's format and include '$' and two decimal places
+print(f"Your monthly savings are ${monthly_savings:.2f}.")
+print(f"Projected savings after one year, with interest, is: ${project_annual_savings:.2f}.")
