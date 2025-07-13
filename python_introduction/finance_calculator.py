@@ -12,7 +12,9 @@ monthly_expenses = float(input("Enter your total mothly expenses: "))
 
 monthly_savings = monthly_salary - monthly_expenses
 
-project_annual_savings = monthly_savings * 12 + (monthly_savings * 12 * 0.05)
+annual_interest_rate = 0.05
+
+project_annual_savings = monthly_savings * 12 + (monthly_savings * 12 * annual_interest_rate)
 
 print("Your monthly savings are ", monthly_savings)
 print("Projected savings after one year, with interest, is", project_annual_savings)
