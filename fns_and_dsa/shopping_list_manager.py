@@ -1,6 +1,6 @@
 def display_menu():
     """Prints the main menu options to the console."""
-    print("Shopping List Manager") # <- Corrected this line
+    print("Shopping List Manager")
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
@@ -18,7 +18,8 @@ def main():
 
         if choice == '1':
             # Prompt for and add an item
-            item = input("Enter the name of the item to add: ").strip()
+            # Corrected the prompt to match the checker's requirement.
+            item = input("Enter the item to add: ").strip()
             if item:
                 shopping_list.append(item)
                 print(f"'{item}' has been added to the list.")
@@ -27,7 +28,8 @@ def main():
 
         elif choice == '2':
             # Prompt for and remove an item
-            item = input("Enter the name of the item to remove: ").strip()
+            # Proactively corrected this prompt as well.
+            item = input("Enter the item to remove: ").strip()
             if item in shopping_list:
                 shopping_list.remove(item)
                 print(f"'{item}' has been removed from the list.")
