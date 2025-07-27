@@ -1,6 +1,6 @@
 def display_menu():
     """Prints the main menu options to the console."""
-    print("\nShopping List Manager")
+    print("Shopping List Manager") # <- Corrected this line
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
@@ -14,12 +14,12 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = input("Enter your choice (1-4): ").strip()
+        choice = input("Enter your choice: ").strip()
 
         if choice == '1':
             # Prompt for and add an item
             item = input("Enter the name of the item to add: ").strip()
-            if item:  # Ensure the user entered something
+            if item:
                 shopping_list.append(item)
                 print(f"'{item}' has been added to the list.")
             else:
@@ -48,7 +48,7 @@ def main():
             print("Goodbye!")
             break
         else:
-            print("Invalid choice. Please enter a number between 1 and 4.")
+            print("Invalid choice. Please try again.")
 
 if __name__ == "__main__":
     main()
