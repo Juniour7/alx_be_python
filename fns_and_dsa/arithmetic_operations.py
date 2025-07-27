@@ -1,6 +1,4 @@
 def perform_operation(num1,num2,operation):
-    num1 = float(num1)
-    num2 = float(num2)
     if operation.lower() == 'add':
         result = num1 + num2
     elif operation.lower() == 'subtract':
