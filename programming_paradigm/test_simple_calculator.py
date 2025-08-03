@@ -25,6 +25,6 @@ class TestTestSimpleCalculatorlass(unittest.TestCase):
         self.assertEqual(self.calc.multiply(-3,0), 0)
         self.assertEqual(self.calc.multiply(0,2), 0)
     
-    def test_divide(self):
-        self.assertAlmostEqual(self.calc.divide(6.0,2.0), 3.0)
-        self.assertAlmostEqual(self.calc.divide(6.0,0), ZeroDivisionError)
+    def test_division(self):
+        self.assertEqual(self.calc.divide(6.0,2.0), 3.0)
+        self.assertEqual(self.calc.divide(6.0,0), ZeroDivisionError)
